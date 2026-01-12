@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ng-model Basic Example</title>
+
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+
+    <!-- AngularJS Application -->
+    <div ng-app="">
+        
+        <h3>Select your favorite fruit</h3>
+
+        <!-- Select Box using ng-model -->
+        <select ng-model="fruit">
+            <option value="">-- Select Fruit --</option>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Mango">Mango</option>
+        </select>
+
+        <br><br>
+
+        <!-- Display selected value -->
+        <p><b>Selected Fruit:</b> {{fruit}}</p>
+
+    </div>
+
+</body>
+</html>

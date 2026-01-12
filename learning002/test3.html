@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>ng-repeat Example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-controller="myCtrl">
+
+    <h2>Student Names</h2>
+
+    <ul>
+        <li ng-repeat="name in students">
+            {{ name }}
+        </li>
+    </ul>
+
+    <script>
+        var app = angular.module("myApp", []);
+
+        app.controller("myCtrl", function ($scope) {
+            $scope.students = ["Rahul", "sen", "leo", "Kiran"];
+        });
+
+    </script>
+
+</body>
+</html>
